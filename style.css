@@ -1,0 +1,190 @@
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #682e2e;
+    color: #fff;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    cursor: default;
+    opacity: 0;
+    animation: slideLogoInFromLeft 1s ease forwards;
+    
+}
+
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    animation: slideRight 3s ease forwards;
+    
+}
+
+.navbar a:hover, 
+.navbar a:active 
+{
+    color: #0077ff;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10% 0;
+}
+img{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0 0 10px rgb(64, 51, 255);
+    animation: slideRight 3s ease forwards;
+}
+.home-img img{
+    max-width: 450px;
+    margin-left: 60px;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
+}
+.home-content p{
+    font-size: 20px;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+.home-content h3{
+    font-size: 35px;
+    font-weight: 550;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.home-content h3 span{
+    color: aqua;
+}
+.home-content{
+    max-width: 600px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #0ef;
+    background-color: #fff;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    animation: slideLogoInFromLeft 3s ease forwards;
+    
+}
+
+@keyframes slideLogoInFromLeft {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }  
+}
+@keyframes slideTop2 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }  
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
