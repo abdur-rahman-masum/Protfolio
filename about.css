@@ -1,0 +1,110 @@
+/* Importing Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    color: #333;
+    padding: 10px;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    text-align: center;
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+/* Main content styling */
+main {
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #2193b0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
