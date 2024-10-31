@@ -6,127 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - [Restaurant Name]</title>
+    <div style="background-color: #f3f4f8; padding: 50px; border-radius: 15px; max-width: 800px; margin: 50px auto; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); border: 2px solid #dfe2ec; animation: slideInFromLeft 1.2s ease;">
+        <h2 style="font-size: 34px; color: #2c3e50; text-align: center; font-family: 'Georgia', serif; margin-bottom: 20px; font-weight: 700; position: relative;">
+            <span style="background-color: #d1e7fd; padding: 5px 15px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">About Me</span>
+        </h2>
+        <div style="display: flex; align-items: center; gap: 25px;">
+            <img src="masum.jpg" alt="Profile Picture" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 5px solid #5d8aa8; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: slideInFromLeft 1.4s ease;">
+            <p style="font-size: 18px; line-height: 1.8; color: #4b4b4b; font-family: 'Arial', sans-serif; text-align: justify; margin: 0; padding: 15px; background-color: #e1f2fb; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); animation: slideInFromRight 1.4s ease;">
+                Hello! I'm <strong>Abdur Rahman Masum</strong>, a passionate Frontend Developer and Graphic Designer with skills in HTML, CSS, Python, and Django. My journey is all about combining creativity with technology to bring ideas to life. Currently, I'm refining my skills at Universe IT Institute, where I'm involved in exciting projects like an e-commerce site. <br><br>
+                My technical skills go beyond just coding. I am proficient in mobile and computer hardware and software and constantly seeking new challenges in the tech world. I look forward to exploring how we can create remarkable digital experiences together.
+            </p>
+        </div>
+        <p style="font-size: 18px; line-height: 1.6; color: #5d8aa8; font-family: 'Georgia', serif; text-align: center; margin-top: 20px; font-style: italic; animation: slideInFromBottom 1.6s ease; padding: 10px; background-color: #d1e7fd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            "Technology is my canvas, and I paint new ideas with code."
+        </p>
+    </div>
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
+        /* Keyframes for Sliding Animations */
+        @keyframes slideInFromLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
         }
-
-        .about-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+        @keyframes slideInFromRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
         }
-
-        .about-header {
-            text-align: center;
-            margin-bottom: 20px;
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .about-header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: #d9534f;
-        }
-
-        .about-header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .about-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-content h2 {
-            font-size: 2em;
-            color: #d9534f;
-            border-bottom: 2px solid #d9534f;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .about-content p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #666;
-        }
-
-        .about-content ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .about-content ul li {
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .contact-info a {
-            color: #d9534f;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+        @keyframes slideInFromBottom {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
-</head>
-<body>
-    <section class="about-section">
-        <div class="about-header">
-            <h1>Welcome to Specific Food Place</h1>
-            <p>Experience fine dining like never before</p>
-        </div>
-        <div class="about-content">
-            <img src="banner.jpg" alt="[Specific Food Place] Interior">
-            <h2>Our Story</h2>
-            <p>Founded in [Year] by [Founder’s Name(s)], [Specific Food Place] was born out of a passion for [Cuisine Type]. Our aim is to bring you not just exceptional dishes, but a memorable dining experience. From humble beginnings to becoming a local favorite, our journey has been fueled by a love for quality food and genuine hospitality.</p>
-            
-            <h2>Our Mission</h2>
-            <p>Our mission is to provide an exceptional dining experience through [mention core values]. We take pride in offering a menu that [mention unique selling points]. Our dedication to [specific values, e.g., quality, sustainability] sets us apart and ensures that every meal is a delight.</p>
-
-            <h2>What Sets Us Apart</h2>
-            <ul>
-                <li><strong>Locally-Sourced Ingredients:</strong> We support local farmers and use only the freshest ingredients.</li>
-                <li><strong>Craftsmanship:</strong> Our skilled chefs craft each dish with creativity and care.</li>
-                <li><strong>Atmosphere:</strong> Enjoy a warm and inviting environment perfect for any occasion.</li>
-                <li><strong>Exceptional Service:</strong> Experience genuine hospitality from our dedicated team.</li>
-            </ul>
-        </div>
-        <div class="contact-info">
-            <p>For reservations or more information, please <a href="contact.html">contact us</a>.</p>
-        </div>
-    </section>
-</body>
-</html>
-
+    
 </body>
 </html>
